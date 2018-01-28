@@ -14,7 +14,8 @@ export default new Router({
     {
       path: '/',
       name: 'HelloWorld',
-      component: HelloWorld
+      component: HelloWorld,
+      alias: '/aliasTest'
      }, 
     {
       path:'/test',
@@ -32,6 +33,9 @@ export default new Router({
         path:'/test/testUrl/:userID(\\d+)/:userName',
         name:'testu',
         component:TestUrl
+      }, {
+        path:'/home',
+        redirect:'/'
       }
       ]
     }
