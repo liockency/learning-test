@@ -5,11 +5,14 @@ import Test from '@/components/Test'
 import Test1 from '@/components/Test1'
 import Test2 from '@/components/Test2'
 import TestUrl from '@/components/TestUrl'
+import Error from '@/components/Error'
+import Counter from '@/components/Counter'
 
 
 Vue.use(Router)
 
 export default new Router({
+  mode:'history',
   routes: [
     {
       path: '/',
@@ -36,6 +39,12 @@ export default new Router({
       }, {
         path:'/home',
         redirect:'/'
+      }, 
+      ,
+      {
+        path:'/counter',
+        name:'counter',
+        component:Counter
       }
       ]
     }

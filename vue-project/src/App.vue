@@ -12,7 +12,9 @@
     <router-link to="/test/testurl/5/zhangsan">URL</router-link>
     <router-link to="/home">测试重定向</router-link>
     <router-link to="/aliasTest">测试alias</router-link>
+    <router-link to="/counter">测试vuex</router-link>
   </div>
+  
 </template>
 
 <script>
